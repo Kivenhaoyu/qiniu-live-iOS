@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>VC</key>
+		<string>QNPiliPlayerVC</string>
+		<key>Title</key>
+		<string>直播</string>
+		<key>ImageName</key>
+		<string>clock_now</string>
+	</dict>
+	<dict>
+		<key>VC</key>
+		<string>QNPiliComeBackVC</string>
+		<key>Title</key>
+		<string>回放</string>
+		<key>ImageName</key>
+		<string>clock_Back</string>
+	</dict>
+	<dict>
+		<key>VC</key>
+		<string>QNPiliUserVC</string>
+		<key>Title</key>
+		<string>用户</string>
+		<key>ImageName</key>
+		<string>userHead</string>
+	</dict>
+</array>
+</plist>

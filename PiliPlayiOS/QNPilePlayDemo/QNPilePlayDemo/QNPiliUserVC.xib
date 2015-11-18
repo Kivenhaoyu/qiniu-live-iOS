@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="QNPiliUserVC">
+            <connections>
+                <outlet property="audioBtn" destination="IaY-gW-yeA" id="9Vn-Hx-Y0i"/>
+                <outlet property="userName" destination="qUs-IO-UKb" id="z4n-2R-pXt"/>
+                <outlet property="videoBtn" destination="zMy-F6-yqQ" id="Ojh-c0-9Qi"/>
+                <outlet property="videoListBtn" destination="4gh-pD-DAq" id="vpB-CK-pX3"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="headPic.png" translatesAutoresizingMaskIntoConstraints="NO" id="0Ip-KJ-bSY">
+                    <rect key="frame" x="275" y="94" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="7NP-JO-OhR"/>
+                        <constraint firstAttribute="width" constant="50" id="U6C-g3-Z4i"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qUs-IO-UKb">
+                    <rect key="frame" x="0.0" y="164" width="600" height="24"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4gh-pD-DAq">
+                    <rect key="frame" x="60" y="208" width="480" height="40"/>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="4Ru-Fu-xBk"/>
+                    </constraints>
+                    <state key="normal" title="我的录制列表">
+                        <color key="titleColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="videoListAction:" destination="-1" eventType="touchUpInside" id="f15-rV-tgi"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IaY-gW-yeA">
+                    <rect key="frame" x="60" y="328" width="480" height="40"/>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="s6t-uc-Eum"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="uwC-t9-zPZ"/>
+                    </constraints>
+                    <state key="normal" title="录制音频">
+                        <color key="titleColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="audioAction:" destination="-1" eventType="touchUpInside" id="JRO-9o-xHC"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zMy-F6-yqQ">
+                    <rect key="frame" x="60" y="268" width="480" height="40"/>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Exn-BL-pbT"/>
+                    </constraints>
+                    <state key="normal" title="拍摄视频">
+                        <color key="titleColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="videoAction:" destination="-1" eventType="touchUpInside" id="l4z-Oc-hHN"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="IaY-gW-yeA" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="1Mf-cP-3Pm"/>
+                <constraint firstAttribute="trailing" secondItem="4gh-pD-DAq" secondAttribute="trailing" constant="60" id="1oF-on-Y9U"/>
+                <constraint firstAttribute="trailing" secondItem="qUs-IO-UKb" secondAttribute="trailing" id="8XN-je-FmZ"/>
+                <constraint firstItem="4gh-pD-DAq" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="60" id="92w-Mh-B0t"/>
+                <constraint firstAttribute="trailing" secondItem="zMy-F6-yqQ" secondAttribute="trailing" constant="60" id="Dp7-9y-iHX"/>
+                <constraint firstAttribute="trailing" secondItem="IaY-gW-yeA" secondAttribute="trailing" constant="60" id="Gc3-Id-iye"/>
+                <constraint firstItem="qUs-IO-UKb" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="H1D-EE-s2m"/>
+                <constraint firstItem="IaY-gW-yeA" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="60" id="McP-Sn-RYO"/>
+                <constraint firstItem="zMy-F6-yqQ" firstAttribute="top" secondItem="4gh-pD-DAq" secondAttribute="bottom" constant="20" id="Mlc-d2-Taj"/>
+                <constraint firstItem="zMy-F6-yqQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="60" id="Oqx-ox-mNc"/>
+                <constraint firstItem="0Ip-KJ-bSY" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="RK0-gf-dgs"/>
+                <constraint firstItem="zMy-F6-yqQ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Tnc-HE-n7K"/>
+                <constraint firstItem="IaY-gW-yeA" firstAttribute="top" secondItem="zMy-F6-yqQ" secondAttribute="bottom" constant="20" id="ecm-Kq-baa"/>
+                <constraint firstItem="4gh-pD-DAq" firstAttribute="top" secondItem="qUs-IO-UKb" secondAttribute="bottom" constant="20" id="ffx-y4-NTy"/>
+                <constraint firstItem="qUs-IO-UKb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="j8C-vT-hGk"/>
+                <constraint firstItem="4gh-pD-DAq" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="kxn-CV-dCE"/>
+                <constraint firstItem="qUs-IO-UKb" firstAttribute="top" secondItem="0Ip-KJ-bSY" secondAttribute="bottom" constant="20" id="rbf-Co-RXC"/>
+                <constraint firstItem="0Ip-KJ-bSY" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="94" id="xZP-8F-DLD"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="headPic.png" width="144" height="144"/>
+    </resources>
+</document>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="QNPiliCameraVC">
+            <connections>
+                <outlet property="actionBtn" destination="Bkh-CB-f0U" id="hCk-yl-3KR"/>
+                <outlet property="actionBtn1" destination="yHl-yR-Mxd" id="Jhi-h3-adf"/>
+                <outlet property="backBtn" destination="vde-sS-KWq" id="tbD-bM-daE"/>
+                <outlet property="backBtn1" destination="mF1-ZA-Kd2" id="PTc-Ms-x7F"/>
+                <outlet property="muteBtn" destination="FUv-hf-luC" id="VlB-Xd-d5T"/>
+                <outlet property="muteBtn1" destination="RpZ-WC-sxw" id="Qr5-hN-o7e"/>
+                <outlet property="rightView" destination="pCw-2s-ajP" id="NYB-KJ-E9A"/>
+                <outlet property="toggleCameraBtn" destination="e7r-r1-thb" id="ziu-ER-F7A"/>
+                <outlet property="toggleCameraBtn1" destination="HPb-Kc-dPX" id="cYi-u7-nkY"/>
+                <outlet property="torchBtn" destination="dbW-f6-0bl" id="pVn-Ny-JIa"/>
+                <outlet property="torchBtn1" destination="l4o-8k-ZIP" id="4ag-BZ-ylX"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="lVa-yl-jvW"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e7r-r1-thb">
+                    <rect key="frame" x="0.0" y="554" width="100" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="1L5-fT-BRE"/>
+                        <constraint firstAttribute="width" constant="100" id="WWK-Rl-M4i"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="Toggle Camera"/>
+                    <connections>
+                        <action selector="toggleCameraButtonPressed:" destination="-1" eventType="touchUpInside" id="tyQ-zR-pqH"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dbW-f6-0bl">
+                    <rect key="frame" x="554" y="554" width="46" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="46" id="O4z-GC-esL"/>
+                        <constraint firstAttribute="height" constant="30" id="PuB-Il-w00"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" title="Light"/>
+                    <connections>
+                        <action selector="torchButtonPressed:" destination="-1" eventType="touchUpInside" id="cLG-GH-l2x"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FUv-hf-luC">
+                    <rect key="frame" x="546" y="20" width="46" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="DsF-Hd-SXg"/>
+                        <constraint firstAttribute="width" constant="46" id="F4b-qB-ium"/>
+                    </constraints>
+                    <state key="normal" title="Mute"/>
+                    <connections>
+                        <action selector="muteButtonPressed:" destination="-1" eventType="touchUpInside" id="A9B-aw-qlp"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bkh-CB-f0U">
+                    <rect key="frame" x="268" y="516" width="64" height="64"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="jnt-il-ydE"/>
+                    </constraints>
+                    <state key="normal" image="playLogo.png"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="jnt-il-ydE"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="actionButtonPressed:" destination="-1" eventType="touchUpInside" id="zhS-zN-PU0"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vde-sS-KWq">
+                    <rect key="frame" x="10" y="20" width="46" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="46" id="2z0-MN-hLO"/>
+                        <constraint firstAttribute="height" constant="30" id="UIo-pi-cQh"/>
+                    </constraints>
+                    <state key="normal" title="back"/>
+                    <connections>
+                        <action selector="backAction:" destination="-1" eventType="touchUpInside" id="SJv-lk-Ht6"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Bkh-CB-f0U" secondAttribute="bottom" constant="20" id="Fd2-VM-Uyh"/>
+                <constraint firstAttribute="trailing" secondItem="dbW-f6-0bl" secondAttribute="trailing" id="N4p-yx-wkR"/>
+                <constraint firstItem="vde-sS-KWq" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="bzo-5k-v2a"/>
+                <constraint firstItem="vde-sS-KWq" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="dgF-Md-TWK"/>
+                <constraint firstAttribute="bottom" secondItem="e7r-r1-thb" secondAttribute="bottom" constant="16" id="ePd-dX-HeW"/>
+                <constraint firstItem="e7r-r1-thb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="i6y-fM-KS1"/>
+                <constraint firstItem="Bkh-CB-f0U" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="j2L-et-cKv"/>
+                <constraint firstAttribute="trailing" secondItem="FUv-hf-luC" secondAttribute="trailing" constant="8" id="k6Y-w7-yyQ"/>
+                <constraint firstItem="FUv-hf-luC" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="koW-dv-JZJ"/>
+                <constraint firstAttribute="bottom" secondItem="dbW-f6-0bl" secondAttribute="bottom" constant="16" id="lQx-cR-bqb"/>
+                <constraint firstItem="Bkh-CB-f0U" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="zaN-30-Cl4"/>
+                <constraint firstAttribute="bottom" secondItem="Bkh-CB-f0U" secondAttribute="bottom" constant="16" id="zll-TX-Ehe"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="j2L-et-cKv"/>
+                    <exclude reference="zll-TX-Ehe"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="278" y="121"/>
+        </view>
+        <view contentMode="scaleToFill" id="pCw-2s-ajP">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mF1-ZA-Kd2">
+                    <rect key="frame" x="563" y="30" width="34" height="30"/>
+                    <state key="normal" title="back"/>
+                    <connections>
+                        <action selector="backAction:" destination="-1" eventType="touchUpInside" id="ezZ-D3-RWR"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yHl-yR-Mxd">
+                    <rect key="frame" x="268" y="528" width="64" height="64"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="64" id="9Jr-GN-H1J"/>
+                        <constraint firstAttribute="height" constant="64" id="JyA-GH-0Y0"/>
+                        <constraint firstAttribute="height" constant="30" id="O37-fP-3UH"/>
+                    </constraints>
+                    <state key="normal" image="playLogo.png"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="O37-fP-3UH"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="actionButtonPressed:" destination="-1" eventType="touchUpInside" id="jIb-zB-6Cd"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l4o-8k-ZIP">
+                    <rect key="frame" x="554" y="550" width="46" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="46" id="3hk-3t-l7b"/>
+                        <constraint firstAttribute="height" constant="30" id="PAh-Hu-XOd"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" title="Light"/>
+                    <connections>
+                        <action selector="torchButtonPressed:" destination="-1" eventType="touchUpInside" id="UoF-Bb-4Cg"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HPb-Kc-dPX">
+                    <rect key="frame" x="530" y="160" width="100" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="MNe-qg-GG8"/>
+                        <constraint firstAttribute="height" constant="30" id="aAG-iF-cJ9"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="Toggle Camera"/>
+                    <connections>
+                        <action selector="toggleCameraButtonPressed:" destination="-1" eventType="touchUpInside" id="w5f-Vo-NsR"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RpZ-WC-sxw">
+                    <rect key="frame" x="554" y="420" width="46" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="e70-Qy-1xz"/>
+                        <constraint firstAttribute="width" constant="46" id="s4d-Lo-oSm"/>
+                    </constraints>
+                    <state key="normal" title="Mute"/>
+                    <connections>
+                        <action selector="muteButtonPressed:" destination="-1" eventType="touchUpInside" id="9so-zc-Vy4"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="mF1-ZA-Kd2" secondAttribute="trailing" constant="3" id="3X7-ia-Q5B"/>
+                <constraint firstAttribute="trailing" secondItem="l4o-8k-ZIP" secondAttribute="trailing" id="Nis-TL-U8u"/>
+                <constraint firstAttribute="bottom" secondItem="yHl-yR-Mxd" secondAttribute="bottom" constant="8" id="Oah-iK-7ZK"/>
+                <constraint firstItem="mF1-ZA-Kd2" firstAttribute="top" secondItem="pCw-2s-ajP" secondAttribute="top" constant="30" id="dMb-rj-W4g"/>
+                <constraint firstAttribute="bottom" secondItem="l4o-8k-ZIP" secondAttribute="bottom" constant="20" id="e5p-xI-fD5"/>
+                <constraint firstItem="yHl-yR-Mxd" firstAttribute="centerX" secondItem="pCw-2s-ajP" secondAttribute="centerX" id="gqi-3e-zkD"/>
+                <constraint firstItem="HPb-Kc-dPX" firstAttribute="top" secondItem="mF1-ZA-Kd2" secondAttribute="bottom" constant="100" id="oHL-xD-OF7"/>
+                <constraint firstAttribute="trailing" secondItem="HPb-Kc-dPX" secondAttribute="trailing" constant="-30" id="qTj-8J-wxj"/>
+                <constraint firstItem="l4o-8k-ZIP" firstAttribute="top" secondItem="RpZ-WC-sxw" secondAttribute="bottom" constant="100" id="w60-rW-yK1"/>
+                <constraint firstAttribute="trailing" secondItem="RpZ-WC-sxw" secondAttribute="trailing" id="xj3-Aw-Gh9"/>
+            </constraints>
+            <point key="canvasLocation" x="685" y="-173"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="playLogo.png" width="64" height="64"/>
+    </resources>
+</document>
