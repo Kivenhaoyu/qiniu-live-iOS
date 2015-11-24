@@ -1,4 +1,4 @@
-# 七牛直播demo项目Android版本
+# 七牛直播demo项目iOS版本
 
 ##官方直播文档
 
