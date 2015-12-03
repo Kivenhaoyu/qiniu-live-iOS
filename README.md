@@ -1,5 +1,9 @@
 # 七牛直播demo项目iOS版本
 
+##打包APP下载
+
+[点击下载](https://dn-devtools.qbox.me/QNPilePlayDemo-v1.0.1.html)
+
 ##官方直播文档
 
 [点击下载](http://devtools.qiniu.com/pili-guide-v1.pdf)
