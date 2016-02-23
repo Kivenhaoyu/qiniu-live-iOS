@@ -2,7 +2,7 @@
 
 ##打包APP下载
 
-[点击下载](https://dn-devtools.qbox.me/QNPilePlayDemo-v1.0.1.html)
+[点击下载](https://dn-devtools.qbox.me/QNPilePlayDemo-v1.0.2.html)
 
 ##官方直播文档
 
