@@ -13,7 +13,7 @@
 本项目模拟一个UGC场景的iOS
 直播APP，项目的服务端在[qiniu-live-server](https://github.com/qiniudemo/qiniu-live-server)。
 
-该项目是基于七牛直播技术，及七牛iOS端推流SDK开发的，七牛iOS端SDK地址为[PLCameraStreamingKit](https://github.com/pili-engineering/PLCameraStreamingKit)。
+该项目是基于七牛直播技术，及七牛iOS端推流SDK开发的，七牛iOS端SDK地址为[PLMediaStreamingKit](https://github.com/pili-engineering/PLMediaStreamingKit)。
 
 ##七牛直播技术
 
